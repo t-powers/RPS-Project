@@ -8,12 +8,12 @@ randomly pick number and switch number to rock, paper, scissors
 */
 
 //create random integer 1 || 2 || 3
-function createRandNum() {
+function getComputerChoice() {
   const randNum = Math.floor(Math.random() * 3) + 1;
   return randNum;
 }
 //switch createRandNum function int to RPS word
-switch (createRandNum()) {
+switch (getComputerChoice()) {
   case 1:
     console.log("Rock");
     break;
