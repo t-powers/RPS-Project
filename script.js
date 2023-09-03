@@ -15,14 +15,14 @@ function getComputerChoice() {
 //switch createRandNum function int to RPS word
 switch (getComputerChoice()) {
   case 1:
-    console.log("Rock");
+    "Rock";
     break;
   case 2:
-    console.log("Paper");
+    "Paper";
     break;
   case 3:
-    console.log("Scissors");
+    "Scissors";
     break;
   default:
-    console.log("Try again.");
+    "Try again.";
 }
