@@ -11,4 +11,11 @@ function createRandNum() {
   const randNum = Math.floor(Math.random() * 3) + 1;
   return randNum;
 }
-console.log(createRandNum());
+
+switch (createRandNum()){
+  case 1:
+    console.log("Rock");
+  break;
+  default:
+    console.log("Try again.");
+}
