@@ -1,6 +1,7 @@
 //creates computer's RPS choice
 function getComputerChoice() {
-  const randNum = Math.floor(Math.random() * 3) + 1; //create random integer 1, 2, or 3
+  //create random integer 1, 2, or 3
+  const randNum = Math.floor(Math.random() * 3) + 1;
 
   //switch randNum int to RPS word
   switch (randNum) {
@@ -17,4 +18,3 @@ function getComputerChoice() {
       "Try again.";
   }
 }
-getComputerChoice();
