@@ -5,18 +5,25 @@ function getComputerChoice() {
 }
 
 //switch createRandNum function int to RPS word
+
 switch (getComputerChoice()) {
   case 1:
-    "Rock";
+    console.log("Rock");
     break;
   case 2:
-    "Paper";
+    console.log("Paper");
     break;
   case 3:
-    "Scissors";
+    console.log("Scissors");
     break;
   default:
     "Try again.";
 }
-
 //play a round of RPS
+
+
+
+
+
+
+
