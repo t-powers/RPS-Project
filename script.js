@@ -19,14 +19,19 @@ function getComputerChoice() {
   }
 }
 
-//creates player's RPS choice
+//creates player's RPS
 function playGame(userPick, compPick) {
-  //player's pick
-
-  if (userPick === "rock" && compPick === "scissors") {
-    return "Player Wins";
+  if (userPick === compPick) {
+    return "You're tied";
+  } else if (
+    (userPick === "Rock" && compPick === "scissors") ||
+    (userPick === "paper" && compPick === "rock") ||
+    (userPick === "scissors" && compPick === "paper")
+  ) {
+    return "You Win!";
+  } else {
+    return "You lose.";
   }
 }
-const userPick = "rock";
-const compPick = getComputerChoice();
-console.log(playGame(userPick, compPick));
+
+console.log(playGame("Rock", "scissors"));
