@@ -26,7 +26,7 @@ function playGame(userPick, compPick) {
     choice = "You're tied";
   } else if (
     (userPick === "Rock" && compPick === "Scissors") ||
-    (userPick === "paper" && compPick === "Rock") ||
+    (userPick === "Paper" && compPick === "Rock") ||
     (userPick === "Scissors" && compPick === "Paper")
   ) {
     choice = "You Win!";
