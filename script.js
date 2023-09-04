@@ -1,8 +1,5 @@
 //create random integer 1 || 2 || 3
-function getComputerChoice() {
-  const randNum = Math.floor(Math.random() * 3) + 1;
-  return randNum;
-}
+const randNum = Math.floor(Math.random() * 3) + 1;
 
 //switch createRandNum function int to RPS word
 
@@ -20,10 +17,3 @@ switch (getComputerChoice()) {
     "Try again.";
 }
 //play a round of RPS
-
-
-
-
-
-
-
