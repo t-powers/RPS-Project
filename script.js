@@ -18,3 +18,5 @@ switch (getComputerChoice()) {
   default:
     "Try again.";
 }
+
+//play a round of RPS
