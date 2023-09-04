@@ -6,15 +6,27 @@ function getComputerChoice() {
   //switch randNum int to RPS word
   switch (randNum) {
     case 1:
-      console.log("Rock");
+      "Rock";
       break;
     case 2:
-      console.log("Paper");
+      "Paper";
       break;
     case 3:
-      console.log("Scissors");
+      "Scissors";
       break;
     default:
       "Try again.";
   }
 }
+
+//creates player's RPS choice
+function playGame(userPick, compPick) {
+  //player's pick
+
+  if (userPick === "rock" && compPick === "scissors") {
+    return "Player Wins";
+  }
+}
+const userPick = "rock";
+const compPick = getComputerChoice();
+console.log(playGame(userPick, compPick));
