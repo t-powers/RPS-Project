@@ -3,6 +3,7 @@ function getComputerChoice() {
   const randNum = Math.floor(Math.random() * 3) + 1;
   return randNum;
 }
+
 //switch createRandNum function int to RPS word
 switch (getComputerChoice()) {
   case 1:
