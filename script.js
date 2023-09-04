@@ -6,34 +6,35 @@ function getComputerChoice() {
   //switch randNum int to RPS word
   switch (randNum) {
     case 1:
-      "Rock";
+      result = "Rock";
       break;
     case 2:
-      "Paper";
+      result = "Paper";
       break;
     case 3:
-      "Scissors";
+      result = "Scissors";
       break;
     default:
-      "Try again.";
+      result = "Try again.";
   }
+  return result
 }
 
 //creates player's RPS
 function playGame(userPick, compPick) {
-  const compPick = getComputerChoice();
-  if (userPick === computerPick) {
-    return "You're tied";
+  if (userPick === compPick) {
+    choice = "You're tied";
   } else if (
-    (userPick === "Rock" && compPick === "scissors") ||
-    (userPick === "paper" && compPick === "rock") ||
-    (userPick === "scissors" && compPick === "paper")
+    (userPick === "Rock" && compPick === "Scissors") ||
+    (userPick === "paper" && compPick === "Rock") ||
+    (userPick === "Scissors" && compPick === "Paper")
   ) {
-    return "You Win!";
+    choice =  "You Win!";
   } else {
-    return "You lose.";
+    choice = "You lose.";
   }
+  return choice
 }
 const userPick = "Rock";
-
-console.log(playGame(userPick));
+let compPick = getComputerChoice();
+console.log(playGame(userPick, compPick));
