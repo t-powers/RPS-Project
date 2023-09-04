@@ -21,7 +21,8 @@ function getComputerChoice() {
 
 //creates player's RPS
 function playGame(userPick, compPick) {
-  if (userPick === compPick) {
+  const compPick = getComputerChoice();
+  if (userPick === computerPick) {
     return "You're tied";
   } else if (
     (userPick === "Rock" && compPick === "scissors") ||
@@ -33,5 +34,6 @@ function playGame(userPick, compPick) {
     return "You lose.";
   }
 }
+const userPick = "Rock";
 
-console.log(playGame("Rock", "scissors"));
+console.log(playGame(userPick));
