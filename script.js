@@ -1,5 +1,5 @@
 //create random integer 1 || 2 || 3
-const randNum = Math.floor(Math.random() * 3) + 1;
+const getComputerChoice = Math.floor(Math.random() * 3) + 1;
 
 //switch createRandNum function int to RPS word
 
