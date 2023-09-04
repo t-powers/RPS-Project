@@ -17,7 +17,7 @@ function getComputerChoice() {
     default:
       result = "Try again.";
   }
-  return result
+  return result;
 }
 
 //creates player's RPS
@@ -29,12 +29,12 @@ function playGame(userPick, compPick) {
     (userPick === "paper" && compPick === "Rock") ||
     (userPick === "Scissors" && compPick === "Paper")
   ) {
-    choice =  "You Win!";
+    choice = "You Win!";
   } else {
     choice = "You lose.";
   }
-  return choice
+  return choice;
 }
 const userPick = "Rock";
-let compPick = getComputerChoice();
+const compPick = getComputerChoice();
 console.log(playGame(userPick, compPick));
