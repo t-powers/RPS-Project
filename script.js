@@ -35,6 +35,10 @@ function playGame(userPick, compPick) {
   }
   return choice;
 }
-const userPick = "Rock";
+
+let userString = "roCK";
+let toLowerString = userString.toLowerCase();
+const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
+
 const compPick = getComputerChoice();
 console.log(playGame(userPick, compPick));
