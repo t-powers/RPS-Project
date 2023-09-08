@@ -1,7 +1,6 @@
 //creates computer's RPS choice
 function getComputerChoice() {
-  //create random integer 1, 2, or 3
-  const randNum = Math.floor(Math.random() * 3) + 1;
+  const randNum = Math.floor(Math.random() * 3) + 1; //create random integer 1, 2, or 3
 
   //switch randNum int to RPS word
   switch (randNum) {
@@ -20,7 +19,7 @@ function getComputerChoice() {
   return result;
 }
 
-//creates player's RPS
+//assigning logic to player's choice
 function playGame(userPick, compPick) {
   if (userPick === compPick) {
     choice = "You're tied";
@@ -37,7 +36,7 @@ function playGame(userPick, compPick) {
 }
 
 let userString = "roCK";
-let toLowerString = userString.toLowerCase();
+let toLowerString = userString.toLowerCase(); //prep user response to match userPick condition inside playGame
 const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
 
 const compPick = getComputerChoice();
