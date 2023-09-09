@@ -43,4 +43,6 @@ const toLowerString = playerPrompt.toLowerCase(); //prep user response to match 
 const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
 
 const compPick = getComputerChoice();
+console.log(`You picked ${userPick}.`);
+console.log(`The computer chose ${result}.`);
 console.log(playGame(userPick, compPick));
