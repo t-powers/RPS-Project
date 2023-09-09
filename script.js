@@ -35,13 +35,15 @@ function playGame(userPick, compPick) {
   return choice;
 }
 
-const prompt = require("prompt-sync")(); //prompt requirement
+function playerChoice() {
+  const prompt = require("prompt-sync")(); //prompt requirement
 
-const playerPrompt = prompt("Choose rock, paper, scissors. "); //assign player's choice
+  const playerPrompt = prompt("Choose rock, paper, scissors. "); //assign player's choice
 
-let userString = playerPrompt;
-let toLowerString = userString.toLowerCase(); //prep user response to match userPick condition inside playGame
-const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
-
-const compPick = getComputerChoice();
-console.log(playGame(userPick, compPick));
+  let userString = playerPrompt;
+  let toLowerString = userString.toLowerCase(); //prep user response to match userPick condition inside playGame
+  const userPick =
+    toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
+}
+// const compPick = getComputerChoice();
+// console.log(playGame(userPick, compPick));
