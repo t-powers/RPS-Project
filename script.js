@@ -39,6 +39,9 @@ function playerChoice() {
   const prompt = require("prompt-sync")(); //prompt requirement
 
   const playerPrompt = prompt("Choose rock, paper, scissors. "); //assign player's choice
+const prompt = require("prompt-sync")();
+
+const playerPrompt = prompt("Choose rock, paper, scissors. ");
 
   let userString = playerPrompt;
   let toLowerString = userString.toLowerCase(); //prep user response to match userPick condition inside playGame
