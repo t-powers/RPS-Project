@@ -35,7 +35,11 @@ function playGame(userPick, compPick) {
   return choice;
 }
 
-let userString = "roCK";
+const prompt = require("prompt-sync")();
+
+const playerPrompt = prompt("Choose rock, paper, scissors. ");
+
+let userString = playerPrompt;
 let toLowerString = userString.toLowerCase(); //prep user response to match userPick condition inside playGame
 const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
 
