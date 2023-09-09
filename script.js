@@ -35,6 +35,19 @@ function playGame(userPick, compPick) {
   return choice;
 }
 
+function gameCounter() {
+  let game = 0;
+  do {
+    game++;
+    console.log(game);
+  } while (game < 5);
+
+  if (game === 5) {
+    console.log("Game Over");
+  }
+}
+gameCounter();
+
 const prompt = require("prompt-sync")(); //requirement for prompt
 
 const playerPrompt = prompt("Choose rock, paper, scissors. ");
