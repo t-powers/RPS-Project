@@ -35,11 +35,9 @@ function playGame(userPick, compPick) {
   return choice;
 }
 
-function playerChoice() {
-  const prompt = require("prompt-sync")(); //prompt requirement
-
-  const playerPrompt = prompt("Choose rock, paper, scissors. "); //assign player's choice
 const prompt = require("prompt-sync")();
+
+const playerPrompt = prompt("Choose rock, paper, scissors. ");
 
 const playerPrompt = prompt("Choose rock, paper, scissors. ");
 
