@@ -35,20 +35,6 @@ function playGame(userPick, compPick) {
   return choice;
 }
 
-// five game countdown
-function game() {
-  let game = 0;
-  do {
-    game++;
-    console.log(game);
-  } while (game < 5);
-
-  if (game === 5) {
-    console.log("Game Over");
-  }
-}
-game();
-
 //player input
 const prompt = require("prompt-sync")(); //requirement for prompt
 
@@ -56,6 +42,8 @@ const playerPrompt = prompt("Choose rock, paper, scissors. ");
 
 const toLowerString = playerPrompt.toLowerCase(); //prep user response to match userPick condition inside playGame
 const userPick = toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
+
+// five game countdown
 
 //game output
 const compPick = getComputerChoice();
