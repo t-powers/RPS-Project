@@ -34,8 +34,8 @@ function playGame(userPick, compPick) {
   }
   return choice;
 }
-
-function game() {
+//player input and game result
+function playing() {
   const prompt = require("prompt-sync")(); //requirement for prompt
 
   const playerPrompt = prompt("Choose rock, paper, scissors. ");
@@ -50,3 +50,15 @@ function game() {
   console.log(`The computer chose ${result}.`);
   console.log(playGame(userPick, compPick));
 }
+
+function game() {
+  for (let i = 4; i >= 0; i--) {
+    console.log(`You have ${i} more games.`);
+    if (i === 0) {
+      console.log("Game Over");
+    } else {
+      playing();
+    }
+  }
+}
+game();
