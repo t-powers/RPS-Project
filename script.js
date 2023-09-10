@@ -34,7 +34,7 @@ function playGame(userPick, compPick) {
   }
   return choice;
 }
-//player input and game result
+//player input
 function playing() {
   const prompt = require("prompt-sync")(); //requirement for prompt
 
@@ -44,16 +44,16 @@ function playing() {
   const userPick =
     toLowerString.charAt(0).toUpperCase() + toLowerString.slice(1);
 
-  //game output
-  const compPick = getComputerChoice();
-  console.log(`You picked ${userPick}.`);
-  console.log(`The computer chose ${result}.`);
-  console.log(playGame(userPick, compPick));
+  // //game output
+  // const compPick = getComputerChoice();
+  // console.log(`You picked ${userPick}.`);
+  // console.log(`The computer chose ${result}.`);
+  // console.log(playGame(userPick, compPick));
 }
 
 function game() {
-  for (let i = 4; i >= 0; i--) {
-    console.log(`You have ${i} more games.`);
+  for (let i = 5; i > 0; i--) {
+    console.log(`You have ${i} more guesses.`);
     if (i === 0) {
       console.log("Game Over");
     } else {
@@ -62,3 +62,9 @@ function game() {
   }
 }
 game();
+
+//game output
+const compPick = getComputerChoice();
+console.log(`You picked ${userPick}.`);
+console.log(`The computer chose ${result}.`);
+console.log(playGame(userPick, compPick));
