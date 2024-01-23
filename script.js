@@ -28,9 +28,9 @@ function playGame(userPick, compPick) {
     (userPick === "Paper" && compPick === "Rock") ||
     (userPick === "Scissors" && compPick === "Paper")
   ) {
-    choice = "You Win!";
+    choice = "You've Won!";
   } else {
-    choice = "You lose.";
+    choice = "You lost.";
   }
   return choice;
 }
