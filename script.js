@@ -51,14 +51,14 @@ function playing() {
   console.log(playGame(userPick, compPick));
 }
 
-function game() {
-  for (let i = 5; i > 0; i--) {
-    console.log(`You have ${i} guesses.`);
-    if (i === 0) {
-      console.log("Game Over");
-    } else {
-      playing();
-    }
-  }
-}
-game();
+// function game() {
+//   for (let i = 5; i > 0; i--) {
+//     console.log(`You have ${i} guesses.`);
+//     if (i === 0) {
+//       console.log("Game Over");
+//     } else {
+//       playing();
+//     }
+//   }
+// }
+
