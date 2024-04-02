@@ -44,6 +44,7 @@ function playGame(userPick, compPick) {
 }
 //player input
 function playing() {
+  yourPick.textContent = "Rock"
   
   
 
