@@ -1,3 +1,11 @@
+let yourPick = document.getElementById("your-pick")
+let oppPick = document.getElementById("opp-pick")
+
+
+
+
+
+
 //creates computer's RPS choice
 function getComputerChoice() {
   const randNum = Math.floor(Math.random() * 3) + 1; //create random integer 1, 2, or 3
