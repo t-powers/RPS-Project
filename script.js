@@ -45,9 +45,10 @@ function playGame(userPick, compPick) {
 //player input
 function playing() {
   
-
-
   
+
+
+
 }
 
 // function game() {
