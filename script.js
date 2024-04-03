@@ -2,9 +2,7 @@ let yourPick = document.getElementById("your-pick")
 let oppPick = document.getElementById("opp-pick")
 
 
-
-
-
+playing("Rock")
 
 //creates computer's RPS choice
 function getComputerChoice() {
@@ -43,12 +41,9 @@ function playGame(userPick, compPick) {
   return choice;
 }
 //player input
-function playing() {
-  yourPick.textContent = "Rock"
-  
-  
-
-
+function playing(n) {
+  yourPick.textContent += n
+  oppPick.textContent+= getComputerChoice()
 
 }
 
