@@ -2,7 +2,20 @@ let yourPick = document.getElementById("your-pick")
 let oppPick = document.getElementById("opp-pick")
 
 
-playing("Rock")
+function rock(){
+  yourPick.innerHTML += "Rock"
+  oppPick.innerHTML += getComputerChoice()
+}
+
+function paper() {
+  yourPick.innerHTML += "Paper";
+  oppPick.innerHTML += getComputerChoice();
+}
+
+function scissors() {
+  yourPick.innerHTML += "Scissors";
+  oppPick.innerHTML += getComputerChoice();
+}
 
 //creates computer's RPS choice
 function getComputerChoice() {
@@ -40,12 +53,7 @@ function playGame(userPick, compPick) {
   }
   return choice;
 }
-//player input
-function playing(n) {
-  yourPick.textContent += n
-  oppPick.textContent+= getComputerChoice()
-
-}
+ 
 
 // function game() {
 //   for (let i = 5; i > 0; i--) {
