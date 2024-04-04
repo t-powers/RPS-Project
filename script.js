@@ -4,18 +4,18 @@ let winnerEl = document.getElementById("winner-el")
 
 
 
-let rock = function rock(){
+function rock(){
   yourPick.innerHTML += "Rock"
   oppPick.innerHTML += getComputerChoice()
   
 }
 
-let paper = function paper() {
+function paper() {
   let user = yourPick.innerHTML += "Paper";
   let comp = oppPick.innerHTML += getComputerChoice();
 }
 
-let scissors = function scissors() {
+function scissors() {
   let user = yourPick.innerHTML += "Scissors";
   let comp = oppPick.innerHTML += getComputerChoice();
 }
