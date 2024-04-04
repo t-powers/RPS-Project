@@ -52,7 +52,7 @@ function playGame(userPick, compPick) {
   ) {
     choice = "You've Won!";
   } else {
-    choice = "You lost.";
+    choice = "You lost";
   }
   return choice;
 }
