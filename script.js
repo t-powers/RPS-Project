@@ -2,22 +2,21 @@ let yourPick = document.getElementById("your-pick")
 let oppPick = document.getElementById("opp-pick")
 let winnerEl = document.getElementById("winner-el")
 
+
+
 function rock(){
-  let user = yourPick.innerHTML += "Rock"
-  let comp = oppPick.innerHTML += getComputerChoice()
-  
+  yourPick.innerHTML += "Rock"
+  oppPick.innerHTML += getComputerChoice()
 }
 
 function paper() {
   let user = yourPick.innerHTML += "Paper";
   let comp = oppPick.innerHTML += getComputerChoice();
-  
 }
 
 function scissors() {
   let user = yourPick.innerHTML += "Scissors";
   let comp = oppPick.innerHTML += getComputerChoice();
-  
 }
 
 //creates computer's RPS choice
@@ -41,9 +40,6 @@ function getComputerChoice() {
   return result;
 }
 
-//assigning logic to player's choice
-
- 
 
 // function game() {
 //   for (let i = 5; i > 0; i--) {
