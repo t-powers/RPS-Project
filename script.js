@@ -5,19 +5,19 @@ let winnerEl = document.getElementById("winner-el")
 function rock(){
   let user = yourPick.innerHTML += "Rock"
   let comp = oppPick.innerHTML += getComputerChoice()
-  winnerEl.innerHTML += playGame(user, comp)
+  
 }
 
 function paper() {
   let user = yourPick.innerHTML += "Paper";
   let comp = oppPick.innerHTML += getComputerChoice();
-  winnerEl.innerHTML += playGame(user, comp);
+  
 }
 
 function scissors() {
   let user = yourPick.innerHTML += "Scissors";
   let comp = oppPick.innerHTML += getComputerChoice();
-  winnerEl.innerHTML += playGame(user, comp);
+  
 }
 
 //creates computer's RPS choice
@@ -42,20 +42,7 @@ function getComputerChoice() {
 }
 
 //assigning logic to player's choice
-function playGame(userPick, compPick) {
-  if (userPick === compPick) {
-    choice = "You're tied";
-  } else if (
-    (userPick === "Rock" && compPick === "Scissors") ||
-    (userPick === "Paper" && compPick === "Rock") ||
-    (userPick === "Scissors" && compPick === "Paper")
-  ) {
-    choice = "You've Won!";
-  } else {
-    choice = "You lost";
-  }
-  return choice;
-}
+
  
 
 // function game() {
