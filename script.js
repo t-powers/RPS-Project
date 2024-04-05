@@ -1,23 +1,27 @@
-let yourPick = document.getElementById("your-pick")
-let oppPick = document.getElementById("opp-pick")
-let winnerEl = document.getElementById("winner-el")
+let yourPick = document.getElementById("your-pick");
+let oppPick = document.getElementById("opp-pick");
+let winnerEl = document.getElementById("winner-el");
 
+function rock() {
+  const rock = "Rock";
+  const opp = getComputerChoice();
 
+  yourPick.innerHTML += rock;
+  oppPick.innerHTML += opp;
 
-function rock(){
-  yourPick.innerHTML += "Rock"
-  oppPick.innerHTML += getComputerChoice()
-  
+  if (rock === opp) {
+    winnerEl.innerHTML += "Tie";
+  } else {
+    winnerEl.innerHTML += "You lose";
+  }
 }
 
 function paper() {
-  let user = yourPick.innerHTML += "Paper";
-  let comp = oppPick.innerHTML += getComputerChoice();
+  
 }
 
 function scissors() {
-  let user = yourPick.innerHTML += "Scissors";
-  let comp = oppPick.innerHTML += getComputerChoice();
+  
 }
 
 //creates computer's RPS choice
@@ -41,7 +45,6 @@ function getComputerChoice() {
   return result;
 }
 
-
 // function game() {
 //   for (let i = 5; i > 0; i--) {
 //     console.log(`You have ${i} guesses.`);
@@ -52,4 +55,3 @@ function getComputerChoice() {
 //     }
 //   }
 // }
-
