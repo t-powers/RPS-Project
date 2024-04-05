@@ -11,17 +11,43 @@ function rock() {
 
   if (rock === opp) {
     winnerEl.innerHTML += "Tie";
+  } else if (opp === "Scissors") {
+    winnerEl.innerHTML += "You win";
   } else {
     winnerEl.innerHTML += "You lose";
   }
 }
 
 function paper() {
-  
+  const paper = "Paper";
+  const opp = getComputerChoice();
+
+  yourPick.innerHTML += paper;
+  oppPick.innerHTML += opp;
+
+  if (paper === opp) {
+    winnerEl.innerHTML += "Tie";
+  } else if (opp === "Rock") {
+    winnerEl.innerHTML += "You win";
+  } else {
+    winnerEl.innerHTML += "You lose";
+  }
 }
 
 function scissors() {
-  
+  const scissors = "Scissors";
+  const opp = getComputerChoice();
+
+  yourPick.innerHTML += scissors;
+  oppPick.innerHTML += opp;
+
+  if (scissors === opp) {
+    winnerEl.innerHTML += "Tie";
+  } else if (opp === "Paper") {
+    winnerEl.innerHTML += "You win";
+  } else {
+    winnerEl.innerHTML += "You lose";
+  }
 }
 
 //creates computer's RPS choice
