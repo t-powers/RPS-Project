@@ -4,7 +4,6 @@ let winnerEl = document.getElementById("winner-el");
 let reset = document.getElementById("reset");
 
 
-
 function rock() {
   const rock = "Rock";
   const opp = getComputerChoice();
