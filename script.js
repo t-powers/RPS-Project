@@ -4,7 +4,7 @@ let winnerEl = document.getElementById("winner-el");
 let reset = document.getElementById("reset");
 
 function rock() {
-  const rock = " " + "Rock";
+  const rock = "Rock";
   const opp = getComputerChoice();
 
   yourPick.innerHTML += rock;
@@ -20,7 +20,7 @@ function rock() {
 }
 
 function paper() {
-  const paper = " " + "Paper";
+  const paper = "Paper";
   const opp = getComputerChoice();
 
   yourPick.innerHTML += paper;
@@ -36,7 +36,7 @@ function paper() {
 }
 
 function scissors() {
-  const scissors = " " + "Scissors";
+  const scissors = "Scissors";
   const opp = getComputerChoice();
 
   yourPick.innerHTML += scissors;
