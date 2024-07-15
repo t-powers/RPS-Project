@@ -1,7 +1,7 @@
 let yourPick = document.getElementById("your-pick");
 let oppPick = document.getElementById("opp-pick");
 let winnerEl = document.getElementById("winner-el");
-let reset = document.getElementById("reset");
+
 
 function rock() {
   const rock = "Rock";
@@ -71,3 +71,8 @@ function getComputerChoice() {
   }
   return result;
 }
+
+function resetGame() {
+  winnerEl.innerHTML += "";
+}
+
