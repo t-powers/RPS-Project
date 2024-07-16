@@ -1,6 +1,7 @@
-let yourPick = document.getElementById("your-pick");
-let oppPick = document.getElementById("opp-pick");
-let winnerEl = document.getElementById("winner-el");
+const yourPick = document.getElementById("your-pick");
+const oppPick = document.getElementById("opp-pick");
+const winnerEl = document.getElementById("winner-el");
+const resetGame = document.getElementById("reset-game");
 
 
 function rock() {
@@ -59,7 +60,7 @@ function getComputerChoice() {
   switch (randNum) {
     case 1:
       result = "Rock";
-      break;
+      bre ak;
     case 2:
       result = "Paper";
       break;
@@ -72,7 +73,5 @@ function getComputerChoice() {
   return result;
 }
 
-function resetGame() {
-  winnerEl.innerHTML += "";
-}
+
 
