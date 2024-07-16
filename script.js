@@ -3,6 +3,9 @@ const oppPick = document.getElementById("opp-pick");
 const winnerEl = document.getElementById("winner-el");
 const resetGame = document.getElementById("reset-game");
 
+resetGame.addEventListener("click", () => {
+  winnerEl.textContent = "";
+});
 
 function rock() {
   const rock = "Rock";
@@ -60,7 +63,7 @@ function getComputerChoice() {
   switch (randNum) {
     case 1:
       result = "Rock";
-      bre ak;
+      break;
     case 2:
       result = "Paper";
       break;
