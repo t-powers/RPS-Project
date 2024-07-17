@@ -4,7 +4,9 @@ const winnerEl = document.getElementById("winner-el");
 const resetGame = document.getElementById("reset-game");
 
 resetGame.addEventListener("click", () => {
-  winnerEl.textContent = "";
+  yourPick.textContent = "Your Pick: " + "";
+  oppPick.textContent = "Opponent's Pick: " + "";
+  winnerEl.textContent = "Winner: " + "";
 });
 
 function rock() {
@@ -75,6 +77,3 @@ function getComputerChoice() {
   }
   return result;
 }
-
-
-
