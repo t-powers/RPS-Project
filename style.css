@@ -1,14 +1,12 @@
 body {
-  max-width: fit-content;
   margin-inline: auto;
   background-color: antiquewhite;
+  padding: 0px 200px;
 }
 button {
- 
   font-size: 35px;
   margin-bottom: 10px;
   display: flex;
-
 }
 p {
   font-size: 40px;
