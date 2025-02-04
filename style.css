@@ -8,6 +8,10 @@ button {
   margin-bottom: 10px;
   display: flex;
 }
+h1{
+    font-style: italic;
+    font-size:300%;
+}
 p {
   font-size: 40px;
 }
