@@ -3,12 +3,6 @@ const oppPick = document.getElementById("opp-pick");
 const winnerEl = document.getElementById("winner-el");
 const resetGame = document.getElementById("reset-game");
 
-resetGame.addEventListener("click", () => {
-  yourPick.textContent = "Your Pick: " + "";
-  oppPick.textContent = "Opponent's Pick: " + "";
-  winnerEl.textContent = "Winner: " + "";
-});
-
 function rock() {
   const rock = "Rock";
   const opp = getComputerChoice();
@@ -77,3 +71,17 @@ function getComputerChoice() {
   }
   return result;
 }
+
+resetGame.addEventListener("click", () => {
+  yourPick.textContent = "Your Pick: " + "";
+  oppPick.textContent = "Opponent's Pick: " + "";
+  winnerEl.textContent = "Winner: " + "";
+});
+
+// const results = document.querySelector(".gameResults");
+
+// results.addEventListener("click", () => {
+//   const listResults = document.createElement("li");
+//   listResults.textContent = winnerEl;
+//   results.appendChild(listResults);
+// });
