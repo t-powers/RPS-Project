@@ -78,10 +78,4 @@ resetGame.addEventListener("click", () => {
   winnerEl.textContent = "Winner: " + "";
 });
 
-// const results = document.querySelector(".gameResults");
 
-// results.addEventListener("click", () => {
-//   const listResults = document.createElement("li");
-//   listResults.textContent = winnerEl;
-//   results.appendChild(listResults);
-// });
