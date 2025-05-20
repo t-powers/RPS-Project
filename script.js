@@ -17,6 +17,7 @@ function rock() {
   } else {
     winnerEl.innerHTML += "You lose";
   }
+  
 }
 
 function paper() {
@@ -77,5 +78,3 @@ resetGame.addEventListener("click", () => {
   oppPick.textContent = "Opponent's Pick: " + "";
   winnerEl.textContent = "Winner: " + "";
 });
-
-
