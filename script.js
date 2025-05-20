@@ -17,7 +17,6 @@ function rock() {
   } else {
     winnerEl.innerHTML += "You lose";
   }
-  
 }
 
 function paper() {
